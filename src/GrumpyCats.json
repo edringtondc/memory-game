@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "name": "grumpy cat 1",
+        "image": "./images/cat1.png" 
+    },
+    {
+        "id": 2,
+        "name": "grumpy cat 2",
+        "image": "./images/cat2.jpg"        
+    },
+    {
+        "id": 3,
+        "name": "grumpy cat 3",
+        "image": "./images/cat3.png" 
+    },
+    {
+        "id": 4,
+        "name": "grumpy cat 4",
+        "image": "./images/cat4.jpg"     
+    },
+    {
+        "id": 5,
+        "name": "grumpy cat 5",
+        "image": "./images/cat5.jpg"      
+    },
+    {
+        "id": 6,
+        "name": "grumpy cat 6",
+        "image": "./images/cat6.jpg"     },
+    {
+        "id": 7,
+        "name": "grumpy cat 7",
+        "image": "./images/cat7.jpg"   },
+    {
+        "id": 8,
+        "name": "grumpy cat 8",
+        "image": "./images/cat8.jpg"     },
+    {
+        "id": 9,
+        "name": "grumpy cat 9",
+        "image": "./images/cat9.jpg"     },
+    {
+        "id": 10,
+        "name": "grumpy cat 10",
+        "image": "./images/cat10.jpg"     },
+    {
+        "id": 11,
+        "name": "grumpy cat 11",
+        "image": "./images/cat11.jpg"     },
+    {
+        "id": 12,
+        "name": "grumpy cat 12",
+        "image": "./images/cat12.webp"     }
+]
