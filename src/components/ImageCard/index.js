@@ -7,21 +7,62 @@ class ImageCard extends Component {
 
   state = {
     cats: cats,
-    clickedIDs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    score: 0
+
   }
+
+
+
+  componentDidMount = () => {
+    //  const shuffledCats = this.shuffleArray(cats)
+    this.shuffleDeck(this.state.cats)
+    this.setState({ cats: cats })
+
+  }
+
+  shuffleDeck = (array) => {
+
+   const shuffledDeck = array.sort(function (a, b) { return 0.5 - Math.random() });
+
+   this.setState({cats: shuffledDeck})
+
+
+  }
+
+
+  //  handleGuess = ()=>{
+
+  //   //click if true, losing game - end game - set all back to false 
+  //   //if false, score increases
+  //   //click, wrong/ right .shuffle, reset
+
+  //  }
+
+
+
+
 
   handleClick = (id) => {
+ 
+    console.log(id)
+    const newArray = this.state.cats;
+  
 
-    console.log(`Clicked on ${id}`)
-    //if the clicked ID is in the array, then score goes up, 
-    const newClicked = this.state.clickedIDs.filter(cat => cat === id)
+    
+    newArray.forEach((cat) =>{
 
-    this.setState({ clickedIDs: newClicked })
+      if (cat.id === id){
+        cat.clicked = true
+       
+      } 
 
-    //if the clicked ID is not in the array, then game over
+    })
 
+    this.shuffleDeck(newArray)
+    console.log(newArray)
+
+  
   }
+
 
   render() {
     return (
@@ -29,14 +70,15 @@ class ImageCard extends Component {
       cats.map(cat => (
 
         <div className="card" >
-         
-            <img alt={cat.name} src={cat.image} key={cat.id} id={cat.id} onClick={() => this.handleClick(cat.id)} />
-          
+
+          <img alt={cat.name} src={cat.image} key={cat.name} id={cat.id} onClick={() => this.handleClick(cat.id)} />
+
         </div>
       )
 
       )
-    )}
+    )
+  }
 }
 
-  export default ImageCard;
+export default ImageCard;

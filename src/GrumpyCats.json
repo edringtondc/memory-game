@@ -2,54 +2,73 @@
     {
         "id": 1,
         "name": "grumpy cat 1",
-        "image": "./images/cat1.png" 
+        "image": "./images/cat1.png",
+        "clicked": false
     },
     {
         "id": 2,
         "name": "grumpy cat 2",
-        "image": "./images/cat2.jpg"        
+        "image": "./images/cat2.jpg",
+        "clicked": false
     },
     {
         "id": 3,
         "name": "grumpy cat 3",
-        "image": "./images/cat3.png" 
+        "image": "./images/cat3.png",
+        "clicked": false
     },
     {
         "id": 4,
         "name": "grumpy cat 4",
-        "image": "./images/cat4.jpg"     
+        "image": "./images/cat4.jpg",
+        "clicked": false
     },
     {
         "id": 5,
         "name": "grumpy cat 5",
-        "image": "./images/cat5.jpg"      
+        "image": "./images/cat5.jpg",
+        "clicked": false
     },
     {
         "id": 6,
         "name": "grumpy cat 6",
-        "image": "./images/cat6.jpg"     },
+        "image": "./images/cat6.jpg",
+        "clicked": false
+    },
     {
         "id": 7,
         "name": "grumpy cat 7",
-        "image": "./images/cat7.jpg"   },
+        "image": "./images/cat7.jpg",
+        "clicked" : false
+    },
     {
         "id": 8,
         "name": "grumpy cat 8",
-        "image": "./images/cat8.jpg"     },
+        "image": "./images/cat8.jpg",
+        "clicked" : false
+    },
     {
         "id": 9,
         "name": "grumpy cat 9",
-        "image": "./images/cat9.jpg"     },
+        "image": "./images/cat9.jpg",
+        "clicked" : false
+    },
     {
         "id": 10,
         "name": "grumpy cat 10",
-        "image": "./images/cat10.jpg"     },
+        "image": "./images/cat10.jpg",
+        "clicked" : false
+    },
     {
         "id": 11,
         "name": "grumpy cat 11",
-        "image": "./images/cat11.jpg"     },
+        "image": "./images/cat11.jpg",
+        "clicked" : false
+    },
     {
         "id": 12,
         "name": "grumpy cat 12",
-        "image": "./images/cat12.webp"     }
+        "image": "./images/cat12.webp",
+        "clicked" : false
+    }
 ]

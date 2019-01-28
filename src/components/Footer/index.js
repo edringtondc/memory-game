@@ -5,7 +5,7 @@ import "./style.css";
 function Footer() {
 
     return (
-        <footer class="navbar navbar-light bg-light" >
+        <footer className="navbar navbar-light bg-light" >
           
         </footer>
 

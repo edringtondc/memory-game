@@ -9,7 +9,7 @@ function Jumbotron() {
       <h1>Clicky Game</h1>
       <p>Click on a Grumpy Cat, be careful to only click on each Grumpy Cat one time. If you click on one, more than once, GAME OVER</p>
       
-      
+
     </div>
   );
 }

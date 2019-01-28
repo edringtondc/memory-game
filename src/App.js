@@ -7,6 +7,10 @@ import "./App.css";
 
 class App extends React.Component {
 
+  state = {
+    score: 0
+  }
+
   render() {
 
     return (
