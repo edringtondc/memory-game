@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCard from "./components/ImageCard";
+import Game from "./components/Game";
 import Jumbotron from "./components/JumboTron";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -20,7 +20,7 @@ class App extends React.Component {
       <div className="container d-flex flex-wrap">
   
       
-        <ImageCard/>
+        <Game/>
     
       </div>
       <Footer/>
