@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  background-color:rgb(255,255,255, 0);
+  max-width: 780px
+}
+body {
+  background-color:rgba(244, 235, 245, 0.5)
+}
