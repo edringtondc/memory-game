@@ -7,8 +7,8 @@ function Header() {
     return (
         <nav className="navbar navbar-light bg-light" >
           
-                <img src="../../logo.svg" width="30" height="30" className="d-inline-block align-top" alt="" />
-                Clicky Game
+                <img src="./images/caticon.png" width="30" height="30" className="d-inline-block align-top icon" alt="" />
+               
          
         </nav>
 
