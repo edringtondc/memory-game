@@ -19,8 +19,10 @@ class ImageCard extends Component {
 
   shuffleDeck = (array) => {
 
+
     const shuffledDeck = array.sort(function (a, b) { return 0.5 - Math.random() });
     this.setState({ cats: shuffledDeck })
+    
   }
 
   handleGuess = (guessedRight) => {
@@ -28,10 +30,10 @@ class ImageCard extends Component {
     if (guessedRight) {
       this.setState({ score: this.state.score + 1 })
       console.log("good guess! Your score is: " + this.state.score)
-        if (this.state.score === 12){
-          this.wonGame()
-        }
-     
+      if (this.state.score === 12) {
+        this.wonGame()
+      }
+
 
     } else {
 
@@ -40,29 +42,29 @@ class ImageCard extends Component {
     }
 
   }
-  loseGame(){
+  loseGame() {
     alert("you lose!");
     this.resetGame();
 
   }
 
-  wonGame = () =>{
+  wonGame = () => {
     alert("you've won the game!")
     this.resetGame();
-    
+
   }
 
   resetGame = () => {
-   let array = this.state.cats
+    let array = this.state.cats
 
-   const resetArray = array.map(cat => {
+    const resetArray = array.map(cat => {
 
       cat.clicked = false;
       return cat;
 
     })
 
-    this.setState({cats : resetArray, score: 0})
+    this.setState({ cats: resetArray, score: 0 })
     this.shuffleDeck(this.state.cats)
   }
 
@@ -98,24 +100,24 @@ class ImageCard extends Component {
     return (
 
       <>
-    
-      <div className="row d-flex justify-content-center"><h3> Correct Clicks: {this.state.score}</h3></div>
+
+        <div className="row d-flex justify-content-center"><h3> Correct Clicks: {this.state.score}</h3></div>
 
 
-<div className="row justify-content-around">
-        {this.state.cats.map(cat => (
+        <div className="row justify-content-around">
+          {this.state.cats.map(cat => (
 
-          <div className="card" >
+            <div className="card" >
 
-            <img alt={cat.name} src={cat.image} key={cat.id.toString()} id={cat.id} onClick={() => this.handleClick(cat.id)} />
+              <img alt={cat.name} src={cat.image} key={cat.id.toString()} id={cat.id} onClick={() => this.handleClick(cat.id)} />
 
-          </div>
-        )
+            </div>
+          )
 
-        )
+          )
 
 
-        }
+          }
         </div>
       </>
     )
