@@ -23,7 +23,11 @@ yarn start
 
 ## Author
 
-* **Elisabeth Edrington** - *Initial work* - [Edringtondc](https://github.com/edringtondc)
+**Elisabeth Edrington** - *Initial work*
+
+[Visit my GitHub](https://github.com/edringtondc)
+
+[Checkout my Portfolio for More Work!](http://elisabethedrington.com/)
 
 
 ## Acknowledgments
